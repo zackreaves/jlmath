@@ -1,9 +1,6 @@
-function pRes(resCount)
+function pRes(resCount = 2)
 
 	x = 0
-	if resCount == 0
-		resCount = 2
-	end
 
 	for i = 1:resCount
 		print("Input resistance(in form of integers only) of R$i: ")
