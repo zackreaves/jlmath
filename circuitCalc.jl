@@ -15,12 +15,10 @@ function pRes(resCount = 2)
 	inverse = x^-1
 
 	if typeof(inverse) == Rational && mod(numerator(inverse),denominator(inverse)) == 0
-		result = convert(Int, inverse)
+		return convert(Int, inverse)
 	else
-		result = inverse
+		return inverse
 	end
-
-	return result
 end
 
 function cDiv(R1,R2,i)
